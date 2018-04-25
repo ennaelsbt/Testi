@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+ <head>
+   <meta charset="utf-8">
+   <title>Ennan title</title>
+ </head>
+ <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+   <h1>Tämä on ny kuule otsikko</h1>
+   <p>Ja tässä ois kappale ja juttui:</p>
+   <script type="text/javascript">
+   function changeText(value) {
+       document.getElementById('pText').innerHTML = "Painoit nappia numero " + value;
+     }
+   </script>
 
-</body>
-</html> 
+   <input type="button" value="Yksi" id="b1" onclick="changeText(this.value);"/>
+   <input type="button" value="Kaksi" id="b2" onclick="changeText(this.value);"/>
+   <input type="button" value="Kolme" id="b3" onclick="changeText(this.value);"/>
+   <p id="pText">Painappas nappia</p>
+
+ </body>
+</html>
